@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="contact_section">
+        <div class="container contact_section_padding">
+            <h2>Contact</h2>
+            <div class="subtitle">
+                For new projects, ideas, business or anything <br> you'd like to discuss, contact with me!
+            </div>
+            <div class="data_flex">
+                <form class="contact_form" action="#" method="POST">
+                    <input type="text" class="contact_input contact_input--active" name="name" id="name"
+                        placeholder="Your name..." required autofocus>
+                    <input type="email" class="contact_input" name="email" id="email" placeholder="Your email..."
+                        required>
+                    <input type="text" class="contact_input" name="phone" id="phone" placeholder="Your phone number..."
+                        required>
+                    <textarea class="contact_input contact_textarea" name="message" id="message" cols="30" rows="12"
+                        placeholder="Your message..." required></textarea>
+                    <button class="btn btn_green" type="submit">Contact us</button>
+                </form>
+                <dl class="personal_data">
+                    <dt>ADDRESS</dt>
+                    <dd><a href="#">123 City name, Street, City, Country</a></dd>
+
+                    <dt>EMAIL</dt>
+                    <dd><a href="#">cahee@domain.com</a></dd>
+
+                    <dt>PHONE</dt>
+                    <dd><a href="#">+012 345 6789</a></dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer_flex">
+            <div class="right_reserved">© 2015 Company. All right reserved.</div>
+            <img src="assets/img/logo-small.png" alt="logo">
+            <div class="author">Made with <span class="pink_word">love</span> by Auskteez</div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/maskedinput.js"></script>
+    <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

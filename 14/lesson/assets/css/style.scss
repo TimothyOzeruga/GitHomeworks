@@ -1,0 +1,289 @@
+@import 'reset';
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.team_block {
+    padding: 100px 0;
+}
+
+.team_header {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0 20%;
+
+    p {
+        line-height: 28px;
+        color: #3c3c3c;
+    }
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 80px;
+        height: 4px;
+        background-color: #a0a0a0;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translate(-50%);
+    }
+}
+
+.team_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    >li {
+        width: calc(25% - 20px);
+
+        .top_wrap {
+            position: relative;
+            margin-bottom: 20px;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                padding-top: 100%;
+            }
+
+            .front {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .back {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: lightblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .soc_list {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        margin: 2px;
+
+                        a {
+                            display: flex;
+                            width: 40px;
+                            height: 40px;
+                            justify-content: center;
+                            align-items: center;
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: 700;
+                            background-color: #2396dd;
+
+                            &:hover {
+                                background-color: #43b4fa;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.ch_1 {
+            .top_wrap {
+                .front {
+                    z-index: 1;
+                }
+
+                .back {
+                    z-index: 2;
+                    transition: all .4s ease;
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                &:hover {
+                    .back {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+            }
+
+        }
+
+        &.ch_2 {
+            .top_wrap {
+                overflow: hidden;
+
+                .front {
+                    z-index: 1;
+                }
+
+                .back {
+                    z-index: 2;
+                    transition: all .4s ease;
+                    opacity: 0;
+                    top: 100%;
+                    left: 100%;
+                }
+
+                &:hover {
+                    .back {
+                        opacity: 1;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+        }
+
+        &.ch_3 {
+            perspective: 1000px;
+
+            .top_wrap {
+                transition: all .4s ease;
+                transform-style: preserve-3d;
+
+                .front {
+                    z-index: 2;
+                }
+
+                .back {
+                    transform: rotateY(180deg);
+                }
+            }
+
+            &:hover {
+                .top_wrap {
+                    transform: rotateY(180deg);
+                }
+            }
+
+        }
+
+        &.ch_4 {
+            perspective: 1000px;
+
+            .top_wrap {
+                transition: all .4s ease;
+                transform-style: preserve-3d;
+
+                .front {
+                    z-index: 2;
+                }
+
+                .back {
+                    transform: rotateX(180deg);
+                }
+            }
+
+            &:hover {
+                .top_wrap {
+                    transform: rotateX(180deg);
+                }
+            }
+
+        }
+
+
+        .info_wrap {
+            .name {
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            .position {
+                font-size: 14px;
+
+            }
+        }
+    }
+
+}
+
+/* Select */
+
+.select_wrap {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.jq-selectbox {
+    width: 100%;
+
+    &__select {
+        height: 40px;
+        padding: 0 35px 0 10px;
+        border: 1px solid lighten(darkblue, 10);
+        border-radius: 0;
+        background: darkblue;
+        box-shadow: none;
+        font: 14px/32px Arial, sans-serif;
+        color: #fff;
+        text-shadow: none;
+
+        &:hover {
+            background: darkblue;
+        }
+    }
+
+    &__select-text {
+        line-height: 38px;
+    }
+
+    &__trigger {
+        border-left: none;
+
+        &-arrow {
+            position: absolute;
+            top: 11px;
+            right: 14px;
+            width: 10px;
+            height: 10px;
+            border-top: none;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-left: none;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__dropdown {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 2px 0 0;
+        padding: 0;
+        border: 1px solid darkblue;
+
+    }
+
+}

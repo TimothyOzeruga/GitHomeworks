@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <!-- <img srcset="
+        assets/img/image@480.jpg 480w,
+        assets/img/image@640.jpg 640w,
+        assets/img/image@900.jpg 900w,
+        assets/img/image.jpg 1440w"
+        sizes="(max-width:480px) 400px,
+        (max-width:640px) 600px,
+        (max-width:900px) 800px,
+        1200px"
+        src="assets/img/image.jpg"
+        alt=""> -->
+
+        <!-- <picture>
+            <source media="(max-width:480px)" srcset="assets/img/image@480.jpg">
+            <source media="(max-width:640px)" srcset="assets/img/image@640.jpg">
+            <source media="(max-width:900px)" srcset="assets/img/image@900.jpg">
+            <img src="assets/img/image.jpg" alt="">
+        </picture>
+
+        <div class="bg_img"></div> -->
+
+        
+
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=1">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=2">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=3">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=4">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=5">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=6">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=7">
+        <img src="" class="lazy" data-src="assets/img/image.jpg?q=8">
+
+        <div class="bg_img_2 lazy-bg" data-src="assets/img/image.jpg"></div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/intersection-observer.js"></script>
+    <script src="assets/js/lazyload.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Не праивльно
+        // $(".hamburger").click(function(){
+        //     $(".hamburger").toggleClass("open")
+        // });
+
+        // Правильно
+        // $(".hamburger").on('click', function(){
+        //     $(".hamburger").toggleClass("open")
+        // });
+
+
+    </script>
+</body>
+
+</html>

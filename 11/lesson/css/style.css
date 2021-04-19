@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    color: #000;
+    font-size: 12px;
+    background: rgb(82,51,124);
+    background: -moz-linear-gradient(90deg, rgba(82,51,124,1) 0%, rgba(138,91,141,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(82,51,124,1) 0%, rgba(138,91,141,1) 100%);
+    background: linear-gradient(90deg, rgba(82,51,124,1) 0%, rgba(138,91,141,1) 100%);
+}

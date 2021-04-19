@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a,
+button {
+  transition: all 0.2s ease;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.team_block {
+  padding: 100px 0;
+}
+
+.team_header {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 20%;
+}
+.team_header p {
+  line-height: 28px;
+  color: #3c3c3c;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 50px;
+}
+h3::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background-color: #a0a0a0;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translate(-50%);
+}
+
+.team_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.team_list > li {
+  width: calc(25% - 20px);
+}
+.team_list > li .top_wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.team_list > li .top_wrap::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+.team_list > li .top_wrap .front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.team_list > li .top_wrap .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team_list > li .top_wrap .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team_list > li .top_wrap .back .soc_list {
+  display: flex;
+  justify-content: center;
+}
+.team_list > li .top_wrap .back .soc_list li {
+  margin: 2px;
+}
+.team_list > li .top_wrap .back .soc_list li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: #2396dd;
+}
+.team_list > li .top_wrap .back .soc_list li a:hover {
+  background-color: #43b4fa;
+}
+.team_list > li.ch_1 .top_wrap .front {
+  z-index: 1;
+}
+.team_list > li.ch_1 .top_wrap .back {
+  z-index: 2;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+.team_list > li.ch_1 .top_wrap:hover .back {
+  opacity: 1;
+  transform: scale(1);
+}
+.team_list > li.ch_2 .top_wrap {
+  overflow: hidden;
+}
+.team_list > li.ch_2 .top_wrap .front {
+  z-index: 1;
+}
+.team_list > li.ch_2 .top_wrap .back {
+  z-index: 2;
+  transition: all 0.4s ease;
+  opacity: 0;
+  top: 100%;
+  left: 100%;
+}
+.team_list > li.ch_2 .top_wrap:hover .back {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+.team_list > li.ch_3 {
+  perspective: 1000px;
+}
+.team_list > li.ch_3 .top_wrap {
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+.team_list > li.ch_3 .top_wrap .front {
+  z-index: 2;
+}
+.team_list > li.ch_3 .top_wrap .back {
+  transform: rotateY(180deg);
+}
+.team_list > li.ch_3:hover .top_wrap {
+  transform: rotateY(180deg);
+}
+.team_list > li.ch_4 {
+  perspective: 1000px;
+}
+.team_list > li.ch_4 .top_wrap {
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+.team_list > li.ch_4 .top_wrap .front {
+  z-index: 2;
+}
+.team_list > li.ch_4 .top_wrap .back {
+  transform: rotateX(180deg);
+}
+.team_list > li.ch_4:hover .top_wrap {
+  transform: rotateX(180deg);
+}
+.team_list > li .info_wrap .name {
+  font-weight: 700;
+  font-size: 20px;
+}
+.team_list > li .info_wrap .position {
+  font-size: 14px;
+}
+
+/* Select */
+.select_wrap {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.jq-selectbox {
+  width: 100%;
+}
+.jq-selectbox__select {
+  height: 40px;
+  padding: 0 35px 0 10px;
+  border: 1px solid #0000be;
+  border-radius: 0;
+  background: darkblue;
+  box-shadow: none;
+  font: 14px/32px Arial, sans-serif;
+  color: #fff;
+  text-shadow: none;
+}
+.jq-selectbox__select:hover {
+  background: darkblue;
+}
+.jq-selectbox__select-text {
+  line-height: 38px;
+}
+.jq-selectbox__trigger {
+  border-left: none;
+}
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  border-top: none;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: none;
+  transform: rotate(45deg);
+}
+.jq-selectbox__dropdown {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 0;
+  border: 1px solid darkblue;
+}

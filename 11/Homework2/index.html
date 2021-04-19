@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="box__logo">
+            <a class="box__logo-link" href="#">
+                <img class="box__logo-pic" src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="box__product product">
+            <div class="product__gallery gallery">
+                <div class="gallery__main-pic">
+                    <img class="gallery__pic" src="img/Shoes.png" alt="Shoes">
+                </div>
+                <ul class="gallery__preview">
+                    <li class="gallery__item item--dark-blue">
+                        <a class="gallery__link gallery__link--active" href="#"></a>
+                    </li>
+                    <li class="gallery__item item--white">
+                        <a class="gallery__link gallery__link--active" href="#"></a>
+                    </li>
+                    <li class="gallery__item item--red">
+                        <a class="gallery__link gallery__link--active" href="#"></a>
+                    </li>
+                    <li class="gallery__item  item--blue">
+                        <a class="gallery__link gallery__link--active" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product__info">
+                <h3 class="product__title">Nike SB Stefan Janoski Max</h3>
+                <div class="product__model-name">
+                    Unisex Skateboarding Shoe
+                </div>
+                <fieldset class="rating">
+                    <legend class="rating__caption"></legend>
+                    <div class="rating__group">
+                        <input class="rating__star" type="radio" name="health" value="1" aria-label="Ужасно">
+                        <input class="rating__star" type="radio" name="health" value="2" aria-label="Сносно">
+                        <input class="rating__star" type="radio" name="health" value="3" aria-label="Нормально" checked>
+                        <input class="rating__star" type="radio" name="health" value="4" aria-label="Хорошо">
+                        <input class="rating__star" type="radio" name="health" value="5" aria-label="Отлично">
+                        <div class="rating__focus"></div>
+                    </div>
+                </fieldset>
+                <ul class="character__values">
+                    <li class="character__value">
+                        <select class="select" name="size" id="size">
+                            <option value="">Size</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                        </select>
+                    </li>
+                    <li class="character__value">
+                        <select class="select" name="qty" id="qty">
+                            <option value="">Qty</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </li>
+                </ul>
+                <button class="btn">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

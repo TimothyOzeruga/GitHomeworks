@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Museo Sans Rounded 100";
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    width: 686px;
+    background-color: #111a28;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.box__logo {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    padding: 74px 36px 24px 32px;
+}
+
+.gallery {
+    margin-right: 80px;
+    padding-top: 40px;
+}
+
+.gallery__main-pic {
+    margin-bottom: 75px;
+}
+
+.gallery__preview {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.gallery__item:hover {
+    border: 2px solid #7e838b;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.item--dark-blue {
+    background-color: #1f273f;
+}
+
+.item--white {
+    background-color: #fff;
+}
+
+.item--red {
+    background-color: #ed3333;
+}
+
+.item--blue {
+    background-color: #29e3ea;
+}
+
+.product__title {
+    color: #797d84;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.product__model-name {
+    color: #5c6168;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.rating {
+    margin: 0 0 8px 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 26px;
+}
+
+/* Caption */
+
+.rating__caption {
+    margin-bottom: 4px;
+    padding: 0;
+}
+
+/* Group */
+
+.rating__group {
+    position: relative;
+    width: 80px;
+    height: 16px;
+    background-image: url(../img/off.svg);
+    background-size: 16px auto;
+    background-repeat: repeat-x;
+}
+
+/* Star */
+
+.rating__star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 16px;
+    font-size: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 16px auto;
+    background-repeat: repeat-x;
+}
+
+.rating__star:focus {
+    outline: none;
+}
+
+.rating__star:focus ~ .rating__focus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.rating__star:hover,
+.rating__star:checked {
+    background-image: url(../img/on.svg);
+}
+
+.rating__star:hover ~ .rating__star {
+    background-image: url(../img/off.svg);
+}
+
+/* Options */
+
+.rating__star:nth-of-type(1) {
+    z-index: 5;
+    width: 16px;
+}
+
+.rating__star:nth-of-type(2) {
+    z-index: 4;
+    width: 32px;
+}
+
+.rating__star:nth-of-type(3) {
+    z-index: 3;
+    width: 48px;
+}
+
+.rating__star:nth-of-type(4) {
+    z-index: 2;
+    width: 64px;
+}
+
+.rating__star:nth-of-type(5) {
+    z-index: 1;
+    width: 80px;
+}
+
+.character__values {
+    list-style: none;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.character__value {
+    margin-right: 2px;
+}
+
+.select {
+    width: 70px;
+    height: 32px;
+    border: 1px solid #5c6168;
+    background-color: transparent;
+    color: #5c6168;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    background-color: #202835;
+    border: 1px solid #5c6168;
+    color: #5c6168;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3a4963;
+}

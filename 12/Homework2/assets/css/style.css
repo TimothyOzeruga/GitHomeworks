@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+}
+
+.card_flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/shadow.png) no-repeat;
+    background-position: center bottom 60px;
+}
+
+.card {
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;
+    width: 400px;
+    padding: 50px 70px 55px;
+}
+
+.register {
+    display: flex;
+    list-style: none;
+    margin-bottom: 54px;
+}
+
+.register li {
+    margin-right: 25px;
+}
+
+.sign_in  {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fbf6e4;
+}
+
+.sign_in::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #e66a64;
+}
+
+.join_us {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e1c2f1;
+}
+
+.data_label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fbf6e4;
+    margin-bottom: 6px;
+}
+
+.input_data {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #9280c5;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.checkbox_flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.checkbox {
+    margin-right: 8px;
+}
+
+.label_checkbox {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fbf6e4;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    background-color: #23ae92;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fbf6e4;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    background-color: #149279;
+}
+
+.help_flex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.help_flex a {
+    font-size: 13px;
+    color: #a4a4bf;
+    text-decoration: none;
+}
+
+.help_flex a::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: rgba(147, 147, 179, .2);
+}

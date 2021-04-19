@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Section Our Servises */
+
+.section_our-servises {
+    background-color: #70bfff;
+}
+
+.padding_our-servises {
+    padding: 180px 0 132px 100px;
+    background: url(../img/tomato_background.png) no-repeat right top 100px;
+}
+
+.our_servises {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_servises a:hover {
+    background-color: rgb(231, 226, 226);
+}
+
+.servise_list {
+    list-style: none;
+    width: 37.3831776%;
+}
+
+.servise_list li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px #000;
+}
+
+.servise_list li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servise_name {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #9d9d9d;
+    padding: 38px 0;
+}
+
+.servise_name3 {
+    padding: 26px 0;
+}
+
+.servise_img {
+    display: inline-block;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servise_title {
+    padding-top: 130px;
+}
+
+.servise_title h2 {
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+}/* Section Our Servises */
+
+.section_our-servises {
+    background-color: #70bfff;
+}
+
+.padding_our-servises {
+    padding: 180px 0 132px 100px;
+    background: url(../img/tomato_background.png) no-repeat right top 100px;
+}
+
+.our_servises {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_servises a:hover {
+    background-color: rgb(231, 226, 226);
+}
+
+.servise_list {
+    list-style: none;
+    width: 37.3831776%;
+}
+
+.servise_list li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px #000;
+}
+
+.servise_list li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servise_name {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #9d9d9d;
+    padding: 38px 0;
+}
+
+.servise_name3 {
+    padding: 26px 0;
+}
+
+.servise_img {
+    display: inline-block;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servise_title {
+    padding-top: 130px;
+}
+
+.servise_title h2 {
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+}

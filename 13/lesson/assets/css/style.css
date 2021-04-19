@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 367px;
+    border-radius: 60px;
+    border: 4px solid #e6e6e6;
+    background-color: #fff;
+    padding: 27px 22px 18px;
+}
+
+.phone__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.camera {
+    width: 14px;
+    height: 14px;
+    background-color: #3e3f3f;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.speaker {
+    width: 60px;
+    height: 6px;
+    background-color: #3e3f3f;
+    border-radius: 3px;
+    position: relative;
+
+}
+
+.speaker::before {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: #3e3f3f;
+    border-radius: 50%;
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.phone__screen {
+    background-color: #266683;
+    margin-bottom: 22px;
+}
+
+.screen__top {
+    padding: 22px 7px 11px;
+}
+
+.applist {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.applist li {
+    margin: 0 7px 25px;
+}
+
+.applist li svg {
+    width: 60px;
+    height: 60px;
+}
+
+.screen__bottom {
+    background-color: #4db9d7;
+    padding: 11px 7px 23px;
+}
+
+.screen__bottom .applist li {
+    margin-bottom: 0;
+}
+
+.phone__button {
+    text-align: center;
+}
+
+.button__home {
+    cursor: pointer;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgb(153,153,153);
+    background: -moz-linear-gradient(135deg, rgba(153,153,153,1) 0%, rgba(243,243,243,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(153,153,153,1) 0%, rgba(243,243,243,1) 100%);
+    background: linear-gradient(135deg, rgba(153,153,153,1) 0%, rgba(243,243,243,1) 100%);
+}
+
+.button__home::before {
+    content: '';
+    display: inline-block;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 4px;
+}

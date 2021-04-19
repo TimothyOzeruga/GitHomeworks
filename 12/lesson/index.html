@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="payment-card">
+            <div class="payment-card__header header">
+                <div class="header-block">
+                    <div class="header__block-title">Harold Finch</div>
+                    <div class="header__block-subtitle">Your Total</div>
+                </div>
+                <div class="header__price">
+                    $88
+                </div>
+            </div>
+            <div class="payment-card__box">
+                <form class="payment-card__form form" action="#" method="POST">
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <label class="form__field-title" for="card_number">Credit card number</label>
+                            <div class="form__control">
+                                <input class="form__control-input" type="text" name="card_number" id="card_number"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__field-title" for="ex_month">Expiration date</label>
+                            <div class="form__control flex">
+                                <select class="form__control-select form__control--wide" name="ex_month" id="ex_month">
+                                    <option value="" disabled selected>Month</option>
+                                    <option value="01">january</option>
+                                    <option value="02">february</option>
+                                    <option value="03">march</option>
+                                </select>
+                                <select class="form__control-select form__control--short" name="ex_year" id="ex_year">
+                                    <option value="" disabled selected>Year</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__field form__field--last">
+                            <label class="form__field-title" for="card_cvv">CVV</label>
+                            <div class="form__control flex">
+                                <input class="form__control-input form__control--short" type="text" name="card_cvv"
+                                    id="card_cvv" required>
+                                <div class="form__control-hint form__control--wide">
+                                    3 or 4 digits - <span class="form__control-tooltip" title="123 or 1234">view
+                                        example</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__actions">
+                        <div class="form__action-button">
+                            <button class="btn btn-green" type="submit">Pay</button>
+                        </div>
+                        <div class="form__action-button mb-0">
+                            <button class="btn-link" type="reset">Cancel order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/maskedinput.js"></script>
+    <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
