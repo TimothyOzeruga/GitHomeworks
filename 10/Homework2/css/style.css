@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    color: #3c3c3c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.padding {
+    padding: 100px 0 110px 0;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 60px;
+}
+
+h1::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 45px;
+    border-bottom: 4px solid #dddbdb;
+    top: 53px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    max-width: 570px;
+    margin: 0 auto;
+    hyphens: manual;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.main_info {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main_info li {
+    perspective: 1000px;
+}
+
+.main_info li:hover .flip, .main_info li.hover .flip {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    width: 269px;
+    height: 268px;
+	transform-style: preserve-3d;
+    transition: all .6s ease;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.flip:hover {
+    transform: rotateY(180deg);
+}
+
+.flip img {
+    vertical-align: top;
+    backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.soc_list {
+    backface-visibility: hidden;
+    position: absolute;
+    background-color: #18b5dc;
+    width: 100%;
+    height: 268px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+
+.soc_box {
+    flex-basis: 42px;
+    /*height: 42px;*/
+    background-color: #6bbccf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.soc_box a {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.name {
+    color: #282528;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 2px;
+}
+
+.post {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: start;
+}
+
+

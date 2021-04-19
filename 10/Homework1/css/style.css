@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_blog {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: #b07cf7;
+}
+
+.padding {
+    padding: 81px 0 120px 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section_blog h2 {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 45px;
+    line-height: 25px;
+}
+
+.cards {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+    transition: all .2s ease;
+}
+
+.cards li {
+    width: calc(33.3333% - 20px);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .35);
+    position: relative;
+    transition: all .2s ease;
+}
+
+.cards li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cards li img {
+    vertical-align:top;
+}
+
+.date {
+    position: absolute;
+    top: -40px;
+    left: -60px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(61, 66, 76, .7);
+    border-radius: 4px;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.cards li:hover .date {
+    transform: translate(90px, 70px);
+    opacity: 1;
+}
+
+
+.number {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.month {
+    font-weight: 900;
+    font-size: 21px;
+    opacity: 1;
+}
+
+.h4 {
+    position: absolute;
+    left: 21px;
+    bottom: 57px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: start;
+}
+
+.under_text {
+    position: absolute;
+    left: 21px;
+    bottom: 23px;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: start;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #f72b3b;
+    padding: 16px 44px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
+}
+
+.btn:hover {
+    background-color: #d82e3c;
+}
+
+
+

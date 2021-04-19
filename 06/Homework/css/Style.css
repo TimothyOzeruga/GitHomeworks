@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 56px;
+    text-align: center;
+    display: flex;
+    
+}
+
+a {
+    transition: all .2s ease-in;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: #9d9d9d;
+}
+
+.icon_wrap {
+    padding: 0 40px;
+}
+
+.icon {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../img/Sprite.png');
+    background-repeat: no-repeat;
+   
+}
+
+.icon:hover {
+    background-color: #fff;
+}
+
+.icon_tablet {
+    background-position: 18px 15px;
+   
+}
+
+.icon_tablet:hover {
+    background-position: 18px -55px;
+}
+
+.icon2 {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../img/Sprite.png');
+    background-repeat: no-repeat;
+}
+
+.icon2:hover {
+    background-color: #fff;
+}
+
+.icon2_tablet {
+    background-position: -101px 15px;
+}
+
+.icon2_tablet:hover {
+    background-position: -101px -55px;
+}
+
+.icon3 {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../img/Sprite.png');
+    background-repeat: no-repeat;
+}
+
+.icon3:hover {
+    background-color: #fff;
+}
+
+.icon3_tablet {
+    background-position: -221px 15px;
+}
+
+.icon3_tablet:hover {
+    background-position: -221px -55px;
+}

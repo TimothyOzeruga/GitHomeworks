@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #232323;;
+}
+
+.rela {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #f00;
+
+
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+.rela2 {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #0f0;
+
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
