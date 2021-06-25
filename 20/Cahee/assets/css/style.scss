@@ -9,7 +9,7 @@ $text_color: #fff;
     text-transform: uppercase;
     color: $text_color;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
 }
 
 .h2 {
@@ -41,10 +41,10 @@ body {
     &.fixed {
         background-color: rgba(255, 255, 255, .7);
         -webkit-backdrop-filter: blur(3px);
-        backdrop-filter: blur(3px);
+                backdrop-filter: blur(3px);
         height: 60px;
         -webkit-box-shadow: 0 0 3px #999;
-        box-shadow: 0 0 3px #999;
+                box-shadow: 0 0 3px #999;
 
         .logo {
             display: inline-block;
@@ -61,11 +61,11 @@ body {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         .menu_list {
             display: -webkit-box;
@@ -117,7 +117,7 @@ body {
     background-color: rgba(55, 55, 55, .8);
     display: none;
     -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
     z-index: 10000;
 }
 
@@ -129,7 +129,7 @@ body {
     width: 100%;
     max-width: 400px;
     -webkit-box-shadow: 0 0 5px #000;
-    box-shadow: 0 0 5px #000;
+            box-shadow: 0 0 5px #000;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
@@ -172,8 +172,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 10px;
     background-color: #a099bb;
 }
@@ -236,8 +236,8 @@ body {
                 display: -ms-flexbox;
                 display: flex;
                 -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 position: relative;
 
                 div {
@@ -258,8 +258,8 @@ body {
                         left: 50%;
                         border-radius: 1px;
                         -webkit-transform: translateX(-1px);
-                        -ms-transform: translateX(-1px);
-                        transform: translateX(-1px);
+                            -ms-transform: translateX(-1px);
+                                transform: translateX(-1px);
                     }
                 }
             }
@@ -282,11 +282,11 @@ body {
             display: flex;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
 
             h2 {
                 color: $text_color;
@@ -301,11 +301,11 @@ body {
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 -webkit-box-align: end;
-                -ms-flex-align: end;
-                align-items: flex-end;
+                    -ms-flex-align: end;
+                        align-items: flex-end;
             }
 
             p {
@@ -337,8 +337,8 @@ body {
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
 
             .servise_list {
                 width: 37.3831776%;
@@ -347,7 +347,7 @@ body {
                     margin-bottom: 20px;
                     background-color: $text-color;
                     -webkit-box-shadow: 1px 2px 5px #000;
-                    box-shadow: 1px 2px 5px #000;
+                            box-shadow: 1px 2px 5px #000;
 
                     a {
                         text-decoration: none;
@@ -359,8 +359,8 @@ body {
                         display: -ms-flexbox;
                         display: flex;
                         -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                        justify-content: space-between;
+                            -ms-flex-pack: justify;
+                                justify-content: space-between;
 
                         &:hover {
                             background-color: rgb(231, 226, 226);
@@ -372,11 +372,11 @@ body {
                             display: -ms-flexbox;
                             display: flex;
                             -webkit-box-pack: center;
-                            -ms-flex-pack: center;
-                            justify-content: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                             -webkit-box-align: center;
-                            -ms-flex-align: center;
-                            align-items: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
                             border-right: 1px solid #9d9d9d;
                             padding: 38px 10px;
                         }
@@ -392,11 +392,11 @@ body {
                             display: -ms-flexbox;
                             display: flex;
                             -webkit-box-pack: center;
-                            -ms-flex-pack: center;
-                            justify-content: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                             -webkit-box-align: center;
-                            -ms-flex-align: center;
-                            align-items: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
                         }
                     }
                 }
@@ -434,7 +434,7 @@ body {
 
         img {
             -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
         }
 
         .gallery1 {
@@ -442,8 +442,8 @@ body {
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             margin-bottom: 30px;
 
             .peach {
@@ -470,8 +470,8 @@ body {
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             margin-bottom: 66px;
 
             img {
@@ -560,10 +560,10 @@ body {
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+                flex-wrap: wrap;
             margin-bottom: 65px;
             -webkit-transition: all .2s ease;
             -o-transition: all .2s ease;
@@ -572,7 +572,7 @@ body {
             li {
                 width: calc(33.333333% - 20px);
                 -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, .35);
-                box-shadow: 2px 3px 3px rgba(0, 0, 0, .35);
+                        box-shadow: 2px 3px 3px rgba(0, 0, 0, .35);
                 position: relative;
                 -webkit-transition: all .2s ease;
                 -o-transition: all .2s ease;
@@ -580,8 +580,8 @@ body {
 
                 &:hover {
                     -webkit-transform: scale(1.1);
-                    -ms-transform: scale(1.1);
-                    transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                            transform: scale(1.1);
                     cursor: pointer;
                 }
 
@@ -617,8 +617,8 @@ body {
 
                 &:hover .date {
                     -webkit-transform: translate(90px, 70px);
-                    -ms-transform: translate(90px, 70px);
-                    transform: translate(90px, 70px);
+                        -ms-transform: translate(90px, 70px);
+                            transform: translate(90px, 70px);
                     opacity: 1;
                 }
 
@@ -679,8 +679,8 @@ body {
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
 
             .contact_form {
                 display: -webkit-box;
@@ -688,8 +688,8 @@ body {
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 width: calc(50% - 85px);
 
                 .contact_input {
@@ -770,8 +770,8 @@ body {
                 .btn-green {
                     width: 40%;
                     -webkit-transform: translateX(70%);
-                    -ms-transform: translateX(70%);
-                    transform: translateX(70%);
+                        -ms-transform: translateX(70%);
+                            transform: translateX(70%);
                     text-align: center;
                     font-weight: 300;
                     font-size: 20px;
@@ -781,7 +781,7 @@ body {
                     padding: 16px 25px;
                     color: #fff;
                     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
-                    box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, .35);
                     cursor: pointer;
 
                     &:hover {
@@ -825,8 +825,8 @@ footer {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
         .right_reserved {
             color: #6e6e6e;
@@ -861,8 +861,8 @@ footer {
 
     .section_about-us .padding_about-us .about_us {
         -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
@@ -876,8 +876,8 @@ footer {
         font-size: 18px;
         width: 50%;
         -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
     }
 
     .section_our-servises {
@@ -962,15 +962,15 @@ footer {
             .our_servises {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: reverse;
-                -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
+                    -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;
 
                 .servise_list {
                     margin-right: 0;
                     width: 60%;
                     -webkit-transform: translateX(32%);
-                    -ms-transform: translateX(32%);
-                    transform: translateX(32%);
+                        -ms-transform: translateX(32%);
+                            transform: translateX(32%);
                     margin-bottom: 30px;
 
                     li {
@@ -1004,8 +1004,8 @@ footer {
         .padding_blog {
             .cards {
                 -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
 
                 li {
                     width: 50%;
@@ -1080,8 +1080,8 @@ footer {
                     display: -ms-flexbox;
                     display: flex;
                     -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
 
                     img {
                         width: calc(50% - 15px);
@@ -1118,8 +1118,8 @@ footer {
 
             .data_flex {
                 -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
 
                 .contact_form {
                     width: 70%;
@@ -1137,24 +1137,24 @@ footer {
         .footer_flex {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
 
             img {
                 -webkit-box-ordinal-group: 0;
-                -ms-flex-order: -1;
-                order: -1;
+                    -ms-flex-order: -1;
+                        order: -1;
                 width: 60px;
                 margin-bottom: 10px;
             }
 
             .author {
                 -webkit-box-ordinal-group: 0;
-                -ms-flex-order: -1;
-                order: -1;
+                    -ms-flex-order: -1;
+                        order: -1;
                 margin-bottom: 10px;
             }
         }
@@ -1200,8 +1200,8 @@ footer {
                 .servise_list {
                     width: 80%;
                     -webkit-transform: translateX(12%);
-                    -ms-transform: translateX(12%);
-                    transform: translateX(12%);
+                        -ms-transform: translateX(12%);
+                            transform: translateX(12%);
 
                     li {
                         a {
@@ -1226,7 +1226,7 @@ footer {
 
                 .two_pics {
                     -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
+                        flex-wrap: wrap;
 
                     img {
                         width: 100%;
@@ -1240,7 +1240,7 @@ footer {
 
             .gallery2 {
                 -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
+                    flex-wrap: wrap;
 
                 img {
                     width: 100%;
@@ -1306,8 +1306,8 @@ footer {
 
             .subscribe_sibtitle {
                 -webkit-transform: translateX(22%);
-                -ms-transform: translateX(22%);
-                transform: translateX(22%);
+                    -ms-transform: translateX(22%);
+                        transform: translateX(22%);
             }
 
             .subscribe_input {
