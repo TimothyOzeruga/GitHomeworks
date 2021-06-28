@@ -40,7 +40,7 @@ const app = Vue.createApp({
                 }
                 this.page = 1;
                 axios
-                    .get('http://www.omdbapi.com/?apikey='+Omdb_Api_key+'&s='+this.search+'&type='+this.type+'&y='+this.year+'&page='+this.page)
+                    .get('https://www.omdbapi.com/?apikey='+Omdb_Api_key+'&s='+this.search+'&type='+this.type+'&y='+this.year+'&page='+this.page)
                     .then((resp)=>{
                         this.changeStar(resp.data);
                     });
@@ -51,7 +51,7 @@ const app = Vue.createApp({
         goToPage(new_page){
             this.page = new_page;
             axios
-                .get('http://www.omdbapi.com/?apikey='+Omdb_Api_key+'&s='+this.search+'&type='+this.type+'&y='+this.year+'&page='+this.page)
+                .get('https://www.omdbapi.com/?apikey='+Omdb_Api_key+'&s='+this.search+'&type='+this.type+'&y='+this.year+'&page='+this.page)
                 .then((resp)=>{
                     this.changeStar(resp.data);
                 });
@@ -71,7 +71,7 @@ const app = Vue.createApp({
         },
         detail(imdbID){
             axios
-                    .get('http://www.omdbapi.com/?apikey='+Omdb_Api_key+'&i='+imdbID+'&plot=full')
+                    .get('https://www.omdbapi.com/?apikey='+Omdb_Api_key+'&i='+imdbID+'&plot=full')
                     .then((resp)=>{
                         console.log(resp.data);
                         this.details = resp.data;
