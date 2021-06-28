@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beetroot</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/hamburger.min.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="assets/plugins/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <style>
+        body {
+            font-family: 'PT Sans', sans-serif;
+            color: #fff;
+            font-size: 18px;
+            background-color: #ebebeb;
+        }
+        .container {
+            width: 90%;
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        /* Header */
+        .header {
+        height: 160px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        }
+        .header.fixed {
+        background-color: rgba(83, 67, 112, 0.7);
+        backdrop-filter: blur(3px);
+        height: 60px;
+        box-shadow: 0 0 3px #719e9c;
+        }
+        .header_container {
+        width: 90%;
+        max-width: 1170px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        }
+        .header .small_logo {
+        width: 40px;
+        }
+        .header .menu_list {
+        display: flex;
+        }
+        .header .menu_list .menu_item {
+        margin-right: 30px;
+        position: relative;
+        }
+        .header .menu_list .menu_item:last-child {
+        margin-right: 0;
+        }
+        .header .menu_list .menu_item:hover::before {
+        background-color: #fff;
+        }
+        .header .menu_list .menu_item .active::before {
+        background-color: #fff;
+        }
+        .header .menu_list .menu_item a {
+        font-family: "Proxima Nova Semibold";
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        }
+        .header .menu_list .menu_item a:hover::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 24px;
+        }
+
+        /* section home */
+        .section_home {
+        background: url(assets/img/bg_first_screen-min.jpg) center center no-repeat;
+        background-size: cover;
+        padding: 350px 0 400px;
+        text-align: center;
+        }
+        .section_home h1 {
+        font-family: "Proxima Nova Bold";
+        font-size: 72px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        }
+        .section_home .sub_title {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mobile_menu_block">
+        <div class="mmb_top">
+        <div class="mmb_logo"><img src="assets/img/Logo-min.png" alt="mobile logo"></div>
+        <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        </div>
+        <nav class="mobile_menu">
+        <ul>
+            <li class="menu_item"><a href="#Home">Home</a></li>
+            <li class="menu_item"><a href="#About">About</a></li>
+            <li class="menu_item"><a href="#Services">Services</a></li>
+            <li class="menu_item"><a href="#Works">Works</a></li>
+            <li class="menu_item"><a href="#Contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menu_shadow"></div>
+    <a href="#" class="scrollup"></a>
+
+    <header>
+        <div class="header">
+            <div class="header_container">
+              <div class="logo">
+                <a href="#"><img src="assets/img/Logo-min.png" class="logo_img" alt="logo"></a>
+              </div>
+              <nav>
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="#Home">Home</a></li>
+                    <li class="menu_item"><a href="#About">About</a></li>
+                    <li class="menu_item"><a href="#Services">Services</a></li>
+                    <li class="menu_item"><a href="#Works">Works</a></li>
+                    <li class="menu_item"><a href="#Contact">Contact</a></li>
+                </ul>
+              </nav>
+              <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button> 
+            </div>
+          </div>
+    </header>
+
+    <section id="Home" class="section_home lazy-bg" data-src="assets/img/bg_first_screen-min.jpg" data-speed="15">
+        <div class="container">
+            <h1>CreativE DIGITAL Project</h1>
+            <div class="sub_title">
+                Duis mollis, est non commodo luctus, <br>
+                nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            </div>
+        </div>
+    </section>
+
+    <section id="About" class="section_about">
+        <div class="container about_wrap">
+            <div class="about_img">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="title" class="lazy" data-src="assets/img/Title-min.png">
+            </div>
+            <div class="about_info">
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+                <p class="about_second_parag">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+                <div class="btn_wrap"><a href="#" class="btn btn_size">Learn More</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Services">
+        <div class="container services_wrap">
+            <ul class="services_wrap1">
+                <li class="bg_gray">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="47px" height="61px">
+                        <image  x="0px" y="0px" width="47px" height="61px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA9CAMAAAAK58AOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC2VBMVEVkX2BkYGBkYGH///9kYGBkYGBkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGFkX2BkYGFkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkX2BkYGFkX2BkYGFkX2BkX2BkX2BkYGFkX2BkYGBkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkYGFkYGFkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkYGBkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkYGFkYGBkYGFkX2BkX2BkX2BkX2BkX2BkYGBkYGFkYGBkYGBkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkYGFkYGFkYGBkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkYGFkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkYGFkX2BkX2BkYGFkX2BkYGBkYGBkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkYGBkYGFkX2BkX2BkX2BkX2BkX2BkX2BkYGBkYGFkX2BkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkYGBkYGFkX2BkYGBkX2BkYGBkYGBkYGFkYGFkYGBkX2BkX2BkX2BkYGBkX2BkX2BkYGBkYGFkX2BkYGFkYGFkX2BkYGBkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkYGFkX2BkYGBkYGFkYGBkX2BkX2BkX2BkYGBkX2BkYGFkX2BkX2BkYGFkYGFkX2BkX2BkYGBkYGH///+IU1+XAAAA73RSTlMAAAAAcrrAv8WWFANxbx4B0ypQ6p8hYTtALuDJ6DAs1Xz6uOHp1W37ogvGvRfTZiNGcrq/ufT2JIuvxELnZQYz694dO0FA4AjMoRLdKNX51yiPrDkCc7d1CdqgItMsxirp7SDfgQ0YLiqohAyar5zlXl/uYgeVBF2+GXKrhq0RgPilE+Znr2Ds0BuI9fDcH+g82Z4w4f1niVH82E/yX4bCx0hd8h9bzyfbtgxe8hiUzhXiZ9JOe/2wFMlXTzZB6sS74sq9u9epFkC+gxE897w11q4lLH00UryCN8qYQwVZJMs6DpFF5sG+yIMaSwk4RDjOGlkAAAABYktHRAMRDEzyAAAAB3RJTUUH5QYVEBwMkT3AmgAABK5JREFUSMeFlolfVUUUx+fM1Hv1KJFEASHXEDUoU3kW4jPy5QIilUSpkQItZplURFCZppVpRqC2UFq0aguRlbRn2WIbrUarZfveufc/aJY7986896rzgc/9cD/fOfOb3zlzLoQAET8iKP896OBQWMchh0YIYYylHXb4gHSmgiTEQPTDQSdD8kcMcjBzsMFTtQUFwQ/JylaRMxQVz3L56rwjAx7M/MO8v4EO1/yIkaNGO0flGHpArxI89V7ma35Mwdhx4/HoQku/oopkfrD5XOcYduxonGCfV+fnC4+bGApPmlzMeRByogVTGDseT4ik8ofnJyXSHuEPZWxqKU6LMTb9xLKTbB58vnBGPPvknJmYAZTNmu3MKee7xCpwLuepvULxKiqlnhHzKgZIK6vwFM6fetr86iQ9QE6fGJL6CavBM86U/AKZH11cuCio2VlYK7c8W5Z4Mefzcb7Epy+pq+d8g3h/zrl2fkLOy4qfPxSXcv4CXHah4C/C5cKfMF48u8BZ0ThLFaHIyx/4f8mleFmTdEn6n4mXN19RgdjSKkWp+l7J/Q9z/SI/u6oAy65eGXUzrxH8qtXXriHxtYjXxWz/Rcj61qhuvT4i++eGdTeu33ATbsSb24g8r/Q/K676Ewibegu2d+CmzWmqP7O35A26FReOK8HbYp4eYunPxdvvKO2cou9L/Z2Ia+9qJo1bG9qC/qQ+v21jZ+RuZ2y5f7/uwXCrcL7LFSdQ/cYXUAKVLudzcdWaDryX+fx9KjFpvL/hgcB/Vd/FhHdD+YPFD60PeOji1sgNhEUD3VpeZyDjpSnb03fgNPYwLnsk4MmjeoPH+FPq56u7ZX27H8eeJ+p34nZm8DzxkzHRPfxJnvLuL/AjV+LTO7jyXZ2hbotX1lDxbOpxa6m+zvlY0vvMs+w59/k0k6dKudjIeWGB9p+K/kf3RfbSy775Xv4xMzFvd0s4/MoKfHUe7nnNG2/cHyfa9fobveve3GvyEMw0FxNDvnEyrPzGTEsRb4k+snlHaQY9esEYMJzJx6UJ+YeZY5HqWSrfCd7Z83ao5p22dCt/MNStkSHzq8h81+NdUVMgyUE9ftt77UNW9uH7hVoP9dJDkBtUm0penveDD52PIgSIcUdUK5vznQQ8+3gnTlD5PzFOKFsfKPUScG649nNf73KtX31giO9rqvzs0yV1pp/E+PZJVZDA85EY8J6RujvByO9qvgqDGQJgnBV8cWb+vVtQ9Zuhh5j1Apvv39pj6afBIlEImqj/M/zc4KkmDXvA9HNfdOQi7X9yN3gH9/kvRnVif7PlD5Eegq5acN4vWyYX85vT3yz7p8iYmXJZsBmV/Sy+lW7dV4N1P/MZRUzN5tFVf7Z/PXe/Px+4HghIvUpMIPqf98v0Hqz8GSl4mnS15Pp/4e3rBYGqlHxtgv1GKyXyYPYP9R/0f/RT88KY1UjiqT+vjCXgX+IU+XfjN2m2m0bF+D8Opb3fWvyu1WVtpi1gLuX/OLhh+3vRdMA58F114gbe4u9/iOKP6RZP4j8hdvwsZv6ksB2//Nrn4G/+107xlPw+p88a+q7xLaj6Yz+zeRF//hVPOfz/bq1mZvwD8zH4VCoEQQoAAAAASUVORK5CYII=" />
+                    </svg>
+                    <h4 class="service_title">GRAPHIC DESIGN</h4>
+                    <div class="service_subtitle">Cras mattis consectetur purus sit amet fermentum.</div>
+                </li>
+                <li class="order">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="58px" height="59px">
+                        <image  x="0px" y="0px" width="58px" height="59px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAMAAAAdOWm/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABMlBMVEVkYGFkX2BkYGD///9jX2BkX2BkYGBkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkX2BkX2BkX2BkX2BkX2BkYGBkYGFkX2BkX2BkX2BkYGFkX2BkYGFkYGFkX2BkX2BkYGFkX2BkX2BkYGBkX2BkX2BkYGBkX2BkX2BkYGBkX2BkYGBkX2BkYGBkX2BkX2BkX2BkX2BkX2BkYGBkYGBkX2BkX2BkX2BkX2BkX2BkYGFkX2BkX2BkYGBkYGFkX2BkX2BkX2BkX2BkYGFkX2BkX2BkYGBkYGFkYGFkYGBkYGBkX2BkX2BkYGFkX2BkYGBkX2BkX2BkYGFkYGFkYGBkYGFkYGFkYGFkYGFkYGBkYGBkX2BkX2BkX2BkX2BkX2BkYGFkYGD///+uZVnEAAAAYnRSTlMAAAAAAI+8v7/CnAyHvcCUFvRTPkA07fRHQDr5GegK9xnoxL/89xlQP0A59grFvrv5wf3f/vAT1OYQOzNSPkMVAQ74R0ESF/UX6Ar1F/WfvsGsDZekNBb3xL05+b3+E9QBDjVe5awAAAABYktHRAMRDEzyAAAAB3RJTUUH5QYVEB8GWsV6RwAAA25JREFUSMeNVwlb1DAQnY5H1wMFqawgoCsqIKCieCuogC6I4n2fbf//bzCTczLJrubbj92mfXl5M5PpAw4dLstOWZZHjh6DoigQizDEb33v+Eipx4mTUPsxap5A/6T6AnBQsBNj/nkFPTVeVdXpCQO1T2Vo7XW3PjM5WVVTZwk6rSdnAlQjMF1Iz3br2QM0zhH0vJ7s1RfKOa1C/+10SjY69NHzIxct9BJBL1toU9OnbrWQNsRA/W7YFYdO64302vkFpWHQWLTfV5bqZQdtm2ktrOe0Cm3yaoyzrlxVGq5dZ2EaEF+9cLdepXiM3Kjh5hopUdJu3VaE4BGGHEFso7izZiXfhXv3qwcT9cNH6xuPPQ8K4pAoKJ6MT049rTerrW29ZK95BlRHfIcQ//CXpPO51ktT0Kv7w/RFI4KqxDioAKJVHziRQ0GXQ38ABxZyTQ1t3IY9lMQCCqBjNPQQayUoyFKIU2JzpJ4S0B1iRbBLO1qISN1icZjUgetnCUVWdR8w0F2ptcgmNk3Oi3o2Dw14AN9w8nkt0EF9MOVOJbQR1YRG59B6AgvVWtFFWAOTlPgIIWdtDaua7DV9vkWfxLQwpVYVpr1hkQUuPK2mjC50QJCsL8XJic83DFpI57UNUNKatjNPy++JDdtCpGcw28vcNkBAwSYHxbsGgB8A+/5KGkzLwwQpMYZpk9flaMOQ2SULmFPy7+QgO7fRGcgcuriEWLQorwcHRNiHSb5vQnFiMZh1rygGvTRCh5GsqMO0R4pweP/O9CZ11Js+XzgLiTfsk+Og/zGAnVdSNBOVhCS3jQOBVZNhBRMmXoXpxv2xx3xJgAPaOEOMNffTZsrbvqlXZJmGsFTu/Zr0IeSp9ndNl9iVvSmTnLggcEj5g+gJKZ5DEYucIcBMI6UgMOirEfJMK/uv37w19yJtUaI0+bt95Zma1fLEewhuUFouyLbGbuMMpPHDi9WHiWY0cg7+9EQbJ1O7SV6R/HBj/LDS+zEJDD+CntV6xE/WmWp7+Tm43znjgbkhtpdfmB9uDSvsBPsbuV9pjr0fbpyBV6zzC1WVOGLy+Xz265K00gXMpKY2FBHLUTfyw/vkh78FqLBoLNFA0FWKxHfywz9IC/nhnxi10EwhUoX8Ij/cOD+sff36xm+ZFZRr0O8/4+Z/ga3tv7t3w5eKIWXkAAAAAElFTkSuQmCC" />
+                    </svg>
+                    <h4 class="service_title">WEB DEVELOPMENT</h4>
+                    <div class="service_subtitle">Cras mattis consectetur purus sit amet fermentum.</div>
+                </li>
+                <li>
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="50px" height="61px">
+                   <image  x="0px" y="0px" width="50px" height="61px"  xlink:href="data:img/png;base64,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" />
+                   </svg>
+                    <h4 class="service_title">SEO & MARKETING</h4>
+                    <div class="service_subtitle">Cras mattis consectetur purus sit amet fermentum.</div>
+                </li>
+                <li class="bg_gray">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="36px" height="61px">
+                        <image  x="0px" y="0px" width="36px" height="61px"  xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <h4 class="service_title">MOBILE DEVELOPMENT</h4>
+                    <div class="service_subtitle">Cras mattis consectetur purus sit amet fermentum.</div>
+                </li>
+            </ul>
+            <div class="services_wrap2 lazy-bg" data-src="assets/img/bg_services-min.jpg">
+                <div class="our_services">
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="62px" height="60px">
+                   <image  x="0px" y="0px" width="62px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA8CAQAAACUAMHEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflBhUQHzsCrTZWAAAHTUlEQVRYw6XZW4xcdR0H8M+5zeylu9vSVlooYEsihHgJlxAeTET0oVEeIAYSEh5IjPiKPBglCEGCxsQLMTExmCAahQg+6oMaE43iCxAgXE20tNZeadldaHc7M+fiw/z37JmxhDnDb5PdzDnz+3//v/tlo0pL2uJSsYGevp6eAUqxWCKRScVSqVQiFotEoFTKlQYG+lb1SVtCL7nTvT4qbjyr9PUM9OUGCoVCqUQlQiQWSQJPrGvNT/zSatRK8sRdHrboqEhHpqujo6olowzgQ/iqvsTwCku24YyuZff5RTvJd7jVbt/zfcsqZXga6Zipr5JKZGKJSKxSqRRKhdId7nHCQz7hHrd7Pryd6Ceurqlerk5XN7XgGf15rCqqByvVF6qj1Vp1W9xC7tgeS455p62PBtptj8orOOaY1Hw78I+Yc8SpKcFjPaUIJ70lsa8deCJSah2dNT+FHIVSJGkbakLUTkMRKosuMicXtYvzmOA500reN+tRa2YtOddW8ljUgI50xSGRxOjrfwB3pRJJsaY01w58qPIN+AVf9m1bVHoGTvqOxz+Au2vgfk+aVRpYbwvelDw1p3ROLpHJP0Duoew9R6xY2Thgchpau6pd7h2PeASRGR2p9QnOiHU3P3wY8M3n6xMBV6JRd20T5xsRPm2wDRNMufmgnc2T2rs3KdLVUUlFYplMIpVIJFIDR52uJY9HhW0DntltzglrI0/3+rHP6RsYyA1CUa1CGR142o+CUUoJ8unAE7skDmz4aqAZHTMGUmmo4oVKHip5ZqtuAzyaVu2lRKUYU/vr9uvoyGSheUokht4Uy5xyNnyzEIumlbyUq8RSOSILEgPD6I8UitDHJaEEpfoOjfCnIsV04JVMbMPbF/zUHUGi/lgHV4XIyD3stzV/EU6ZCjyzS+RUUFyia1lWH5ZJdUP3lqsU6JsT11YuxwtyG/CurXoOGoBlXwrPEx2ZjlRWq31o8dyhhoNVktED29k8VtYOE1kQK0PWiuRKuUQU2uQUHZc7Zrm+QDy92uOGxZn1mNtFNmw+jPNCUYdZJZF7ws9D11cay45twLebd9YgVLaOGSuSIEsp1pGGqaQMaaaUWqoxMol82jif0bXqXPi04pb6jKHFO6FjjyWIJGYkjlkO37vUDoetTge+RWZNESSPLISuLAp/e2J9iVQklVh2fIS/IzEIXtIafK8FbzoTWBc8Hvw9D1HeV8jrQYk1d3uxoeYiXHwq8G1Sp/VqOWacDi44HAc7CmljOJqRjfAP697Ig0kptVPqjF649yk3j9k8GxuMBw403ctu81YUm8E2OfiMS0UOBofp2CbStzGBEoW8NgSPRTJXOuy9htnmveb0NOBztiqd0kPkKk/4VHiT15k9D4E2HI5jax7wu/CtRBS+21rtkS0uVDlSS7riZDiQYX83rGZFsHqllOjUJ2Q6dcFpLfm8Gf0Qs6WX3Ng4oxsqeicsROKQZvNGSZ13hY5/NluRScFjOyw401RaTbm8bhjen1LzKqvNej5p9xrbad4J706sqXHqmlc1+5jJweddYdGhqWfzocOuOzANeM9FMi94+0NInumPSt60eWyXS2SikJ+H5YFIZcmVSh3Xq+od3EBh2I0Ps1cUnG35PPqJXegC7436Rtq42Wd809UhWWhMJ4nIjC4e8I1G8GzQICz2zoXu7Q2P+kvTsdCxx6IDoz3/Jvg1vuXTDjokq3dq6ukslot1dSUS3RBWw8k8VojM2ollfTfb6QF/HAO/WMebjp4PfNa1Puk1X/OSTqMmV2GRV8nlCnnIYsXIwZmtvuI+r/q6dz1kv9s8V9dx2GKfWQcbybYBvs3V5vzJs2PD0CTU17fdVXjGn1WedIOrXTwCPm+P3MGRQlN7e8d2616fAnpIO+3ztudUeMtxF1gceb/FolX/GWXaAC+V49W2FZUiRaj1Z53VGXHM2D57vD2iiwZ4JWlsU9tT1ViZFI3fQ1p0gwu9MupuTfBYdd7MPRkVDb3FsrDs2wS/Tuzv4/Ef18wDsbnW+/cNmjOnHy4/EOuOmHCvy5z06mh+2wQ/44iuyy1MCb7dohOhy1n1nh2uqN8lbrHX3xwcZ9qUfJgopnW5UmI9JM//+rV1t/tYeHeTW617yuFxpg01z9urcnxqqycis/bqmNV3wrIb3esZK3Z60GV+5R//z7QBXpp3zsG6MW5HmY9LXOdp59CXugRf9UVn7LTds34wNkCMgC/Zp3Ji3CUmpFlXmvOOcyKFWN+LCrEZkeN+74dePh9bajhVfdY2b3hxrBZNStfab82d/iWrlyLDolPh8Pt1AaltLrbf/ZYccr3V0P4lIkk92lRKhYEitMg9fYOQlHo+77t2ecoL9cZtQoqqu/wsKL/SkytH1pyRSFzvGjYkatJwUPiru/27bYZMnfIHS6GjrgiTVhH2DRszaCKWScJYNKzncdhHrvmNxxxu/0+AqDG7dOo9WhwydRQG/TxU88F5ACIZE6y7z0P/A9cG70zPKwt+AAAAAElFTkSuQmCC" />
+                   </svg>
+                    <h4 class="main_service_title">OUR SERVICES</h4>
+                    <div class="main_service_subtitle">
+                        “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”<br><span>- Borat -</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Works" class="works_wrap lazy-bg" data-src="assets/img/bg_works.jpg">
+        <div class="container">
+            <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="40px" height="60px">
+                <image  x="0px" y="0px" width="40px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA8CAQAAAC+sDBrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflBhURCDHmOTHpAAACaUlEQVRYw6WYXbHjMAxGNUVgCIFQCGFwC8EQymDDoBC6i+DOIsgsgkAIhMwiOPvQJP6TFSebvLS2fCz7k2S3gqzvxPVn2ilyk+3p5Prjos872wMLXZir8Z0BH77HXSPwfRLngTluiTvvAPT/418KFF75fGf9y4GOBRiu+5cDz0njtfWUZu3SKP5pwFZpvL7fmumrOUN8OfqmxP3f5gzRsquYo2MBHk1LVuQrDb+BsUkUVb7cqAfg3gTsoFyLFgqv5sAegBlXBw7AkhqYr2POM6uUwzfjBOEBEEtzTY5cmlEDnpHDkOZYDseTEYCR57E0R3Lcs8NrUiWLnLHlcEzAgsfh8CwVZLRdthx5nH0KsLbwnWDLMRV++/QULkNuG6ZnB5At0AFUpVlwwtPIDm1wDbhK8wnMp2HySFpqSxbWrLnJHxH5qhTQXyLyii4aTn6IyO+K9ZeI/Nx2pVfndGugPFYP5rK6ZBnTC8LbyOE7SxLYSzU5V0pgdxVDx8AMwMxQLW37OgP9XTE90jYEzR7YRz4eAz973QfgJ3jel4FDOPS3pl7Jilagi0tLaB7Ne5cFfMaXktDcmweUBUwuTXnHcBqYXZryruU0cE5rgeF8E9DnG2W63wA0D3pBqke9DlSENEK0AaiEmh6kfRNQTYZy1j3ND4FqupZAveCWwLteUDTltIJbAislTwNqxSwHVgueBtRmz4HVkqwDy/lTYFc/2HRgqWAKNI61GjCPsRhYi1UTmGdBDBwwrs51YJqnAWj6ZwHTShKAtWxvAMYFdwO6o58eFjAuuBvQc/CvhA30aI+/DtT+wJrsEf8AVQ6UhE4ObNgAAAAASUVORK5CYII=" />
+            </svg>
+            <h3 class="works_title">Recent Works</h3>
+            <div class="works_slider">
+                <div class="work_slide">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="projects" class="lazy" data-src="assets/img/projects-min.jpg">
+                </div>
+                <div class="work_slide">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="projects" class="lazy" data-src="assets/img/projects-min.jpg">
+                </div>
+                <div class="work_slide">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="projects" class="lazy" data-src="assets/img/projects-min.jpg">
+                </div>
+                <div class="work_slide">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="projects" class="lazy" data-src="assets/img/projects-min.jpg">
+                </div>
+            </div>
+            <a href="#" class="btn btn_works">View Gallery</a>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container team_wrap">
+            <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="60px" height="60px">
+           <image  x="0px" y="0px" width="60px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAk1BMVEVkX2BkYGBkYGH///9jX2BkX2BkX2BkX2BkX2BkX2BkYGBkX2BkYGBkX2BkX2BkX2BkX2BkYGFkX2BkX2BkX2BkX2BkX2BkYGBkYGFkYGFkYGFkYGBkYGFkYGFkYGBkYGBkYGFkYGFkYGBkYGBkYGBkYGFkYGBkYGBkYGFkYGBkYGBkYGFkYGFkYGBkX2BkYGH////Ewg/RAAAALXRSTlMAAAAAAECPv+8gvzDvn1DPEM+v33CAYJ8QYK8wnyBAr7/fcBDf749QQGCAUIAXmTitAAAAAWJLR0QDEQxM8gAAAAd0SU1FB+UGFRIHLADh/6YAAAQ+SURBVEjHjVYLe9wmEAQuCLAsiepB/GhSN03jpI1W///fdZe3TrpL+XzYPjGwO8zOijHO6IeGwA+PfzMmG7Vq1cj4L4/PLtVgu8HjPpyZBwDYNpyUCfvSE8HvgMPpOFoNj11vTN8B6DYdjZPYg7nYHe0/iB1M2MgMAZ3SOZwsyhxyHmCwKVH7G6hq+x1YRKJKaIz1oC3+HUMyGuRt8GGM0FRbsQY6TkeIY85sjyfEBG3NgYSpPL7Fdr5igD37ACL/twPzijIeCShgftjsBFwW0qwpbCFCmnhxoAMQv7oOW+xCpHmEuU5jgbEsuqcwPxxMNooHJ6tXd5MwnsLLu/MJPqYcBOsqsg8np+hK9kwCdE9hN4vqDhoh8YnDVaUTw/FIChcOYHJYTsZNAM+1Ek5yjnck8rIeQThW3ERywYqGT8BZyDl4Oz+sWM7K2f2SU7Z5hh3UXpHBDtqul4szdNiA/+qevUL2Yw3T+L9EsiYAjS39XiGefwscCM0lxANJV7Vxrm2SPa2ENbNbJY9gcR62iEL0ItqgtqQogCeI357Vc0XrlB2rOljCEL+572GqtrsUggQlTkSSLpCnlR0sGZN3XoIlMn4uT88rLZ7TldZ7vsAsbt5zMTjxuqJpXw27QWwg1/JMV5n6zgSOx7vjcUcHQ0pvDxZ7wgWfyYR2jNkJnk971d6AfIwT/L4n7ONajOi+tjmTK3SRAl+o0Yg4PztZZJHFBWhCStK9fqArHgBc5n3vYfy6V9GiXq8oqdhtQfdVXzl1z13DEeSZ4RH6qK1z+qXp0yDwrm+dhX0cn6STBRR+f3byiZ2JpGp1rcP3JzQOTZ4QLBE2eqLJXFTj2hthGzdqbzlajX0dNm3h/njT5EWgR2cPYKcI9+f4RVqijZew10Sn/Ty/+FYwuhpsFzpzmNt43y02mnWrczbxPUO084AZPC5/RW0Lai3TYsIJffMG1MyTaQUwxqyaPrQbg0dtX3sP5g1s2oXQTPc3me3URBBP7yPN5HnsTCDMoYi+kTwbgG82XOTigT1lzZHldLK/DvveUMJLyJZE1FzY96BcWoHYh+xfpWWkWmVCqi2hL46qZYQlafuxKgC0hDX0jaEWGL5wpHuiNxUAm55sa39VnNkqRHwP/wE6gS3S6sEhPWSusaI653oYWlHAgCU3p6TsuJICTISLVOThX+NeMInuUsJWVPhtXiIVNUatllnKUudSzsubly7yeSmEOd+P55KlmVXssFtp0Juf1WyKGXyhIPACX8h0akrb539GNUQkAgc1Li69B3soRdgFbc+oF/V+3bUOTcx3XKpnKiI9x8IQpvPa6/OS44g+wtl7R9l3pipJs/hiU8u/5mp91QJNv3irmH6anZPg57X56pN8fOgWJ2W+fWRFSrd0gW/U/utJl6Tz0YUSzWuZM+/oQ5/uG6CRyzIqVb9NKaR7lubw+vgfcptuQt7LB6YAAAAASUVORK5CYII=" />
+           </svg>
+           <h3>Meet Our Team</h3>
+           <ul class="team_slider">
+                
+           </ul>
+        </div>
+    </section>
+
+    <section id="Contact" class="contact_wrap lazy-bg" data-src="assets/img/BG_map-min.jpg">
+        <div class="container">
+            <svg class="location_icon"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="42px" height="60px">
+           <image  x="0px" y="0px" width="42px" height="60px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA8CAQAAAC6ReBWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflBhUXBR+LzD7ZAAAC20lEQVRYw7WY3ZWbMBBGP7sCSiAVhA5CB0sHoYN1Ce6AEtgOOKmA7cBOBd4OcAc3DxJrfmZkbJ9IT0ajKzTzzUh4h5KtUKmfypWpkHTWVV/6q0+dk7Pwek7DgNcuNOTeXA/YxckDHQdKSoQoKTnQfS/W2mALeYxTOip3H9X3ssf70JwTAL2/uYltD8BpaTs3KxiAIfGG6zcOMwoPGpCnDe+43tsMu0ZmDyGFyJbY+cAzSGP2+LgBhieRwQkD0EyhBcAD4bFDBgQXhAc90L2EFKID+hFaAiRiXtJERfY0MbdsF8R3FaIFWtewX+W9nxiRJMQw+mLVx2RoqcjJqWhjRfDsYUDBwZcEcpkMhtgn/QKUoXw0pkHvKDeosncdcAxTa0cinnKDKq2Q1UC/Vybpy6jeb5I+dDUr+5c+JP02R6RMAK53bL+NMrQjAexA0s48Z+zn98aR9voPba+rpNwYuUoq3HlFtFi2XNJ1r7MD/ZRUutAqWliLnQP0zRj+I+ldmYnM9B4tlu2XpHPQ48mNv10TWjf2J6ASmVujyni2zxMgi/lvST/UKY118GiuW8fbSB0Xzam5gJODIeW7AK3dzYgyQuZXHq+mXsL5EX4MicMko57U1J7aPclCtdAIPbpV55Hej26cOrh4CVncAj4VSfsSdEKYiyF/Gjmbb6702ntOoa/4tZjvc7nacxro57tc+6V8GLm6jMyHG7e4pPppeR7PhzMGN6+9Xq9P3aXJ8cErZXiNw/zp2uziXi6s3ljFyHP7NmkVdmgt026ztJx7rWWaW34y+gEYrNS2zbeEK/OXTmkvfWHvfE2nQ1C5yCoVzntisV0Qtn705qZ85iu2TSyYhI6KLTc/3wS1XZBNv+2egQYXzFXQpbd+Hzpu9aaCaksS34POE+FO1LdDNfnA6bcV8S3QIibkIfFR9jA0lI7QDlvst0EV/zDa+Pm+u/O33O1CfpH0w/lYW7R/tCICVSHGLJMAAAAASUVORK5CYII=" />
+           </svg>
+           <h3>Get In Touch</h3>
+           <div class="icon_info">
+                <div class="contact_info adress_wrap">
+                    <div class="icon">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="38px" height="36px">
+                        <image  x="0px" y="0px" width="38px" height="36px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAkCAQAAABP/IAuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflBhUXBzry/ogcAAACiUlEQVRIx+3Wv08TYRzH8fdBaUuhQkwcdDFd3HQycREjbrBIIAH7wxZjGPwRRtZrwn9ApES0KhY1MfwMkcBoHNTNOBkToomDq0kTaXttPw6U41rba4urzy3X57nv67733Peep4Zo2oIsYnGPbL3BpOPc05TqZ4krQB8JfnGKGU5TBsAgxwZvWsdOsMQAI8A6S0TZR/RTRoBFjP3WsW4yXGWct0CY1yxzgxm6AAGdnMVwXt7hQvXygkHC7AKwS5hrvCSAhUWRIkVKqDUsyBMGGWfb7tlmnEGeEbRjjeqQRpifNENE2anq3SHKEGn89YM6GlAZhok5sjrKLsYwmQrXi68ZFqhktVn3RpuV7AIUec8X59Dfb9PPQ64TZqvhbG4S5hVlppiufgG1mI/HjHLThQLYIkEGg3ilfOtifh4xSpxVmrVVDJ4jpsjVnzMf84wRY6UpBbBCjDHmk756mJcUESZZa4kCWGOSCKmk1+7RweFRWnlFRJtHRHml5TExMSuYV4vKaaJtCqEJ5bQo7yHmU0p5RY9FYaKo8krJZ4J6tSBLieNRwsRECVlaUC9al6W4EOpXoG2sR30mJorL0gZ6UMnKp4ym2sbu6OnBfOm25jzct4vkEj9bLovDFuIyHgqQTFcX7T5W25jF76Pv023Z9nLOXggPW5avFBoFuGFnWCZE1l5PRZBvjPD9OJiHk8zyzl4A8www7RbhhokiH/jo6OniLi67ttvuBNDt8qttrK32H/s3zKBUNWbVKQPVfHIl518EZ52V8dBJl32ZH6OGEwZ+uui0b+dxbnZOrMAtLuK1sSChmlxLhFgma2MFzvOjHmYxxwV8jlxK7LBXhe0xS49NgcEnPh89+B/PbH3rfOctrQAAAABJRU5ErkJggg==" />
+                        </svg>
+                    </div>
+                    <div class="info">
+                    Ikan Piranha Atas 220C 
+                    Malang - East Java
+                    Indonesia
+                    </div>
+                </div>
+                <div class="contact_info phone_wrap">
+                    <div class="icon">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20px" height="34px">
+                        <image  x="0px" y="0px" width="20px" height="34px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAiCAQAAAD1ozE2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflBhUXCgH2Wx91AAABSUlEQVQ4y+3UsUvVURjG8c+591R6bXMIbFDCCAopCGwI/AcE94IGsUFobmxq8y8IioZoaoySoMUlCCEEN1EcktwEJS/3dtX7Ntxf8fupeYdWnzOcc57zhfc5HM6bgsfmDQqnq2bHS2+yJxY8tyr/Azxwzwt1sRXzoc94GuspfrptE0x55KBS9LVlcN1KduRXcbCnJf3NmnTsF+umw4wHtos0S8fy3XQHjJBi1w9NNThx8wS6hlxNseu+tQI8XV03fMloO3S22tRQ1091Z5Y89kDn4Dn4P2C7L9Um467hPuBY73Pta5UidDUxVHEGXc54aKNkN8zhlVYJHPc+43vxr3taMKOm41nJuyhlWaOSZ8KW7FbFG9YVX+NdpSFdi8/xMa6UnEuxGJ9STPhgzzedoi/8mS8U+RomDZhOwYhZo8UxvcZS3m14a/s3sYB7TtW/dKUAAAAASUVORK5CYII=" />
+                        </svg>
+                    </div>
+                    <div class="info">
+                        +38-093-594-43-72 <br>
+                        +38-066-536-27-38
+                    </div>
+                </div>
+           </div>
+           <form action="#" id="contact_form">
+                <div class="name_phone_wrap">
+                    <div class="name_input form_row">
+                        <label for="name"></label>
+                        <input class="contact_area" type="text" id="name" name="name" placeholder="Your Name" data-required>
+                        <div id="name_err" class="form-text text-danger"></div>
+                    </div>
+                    <div class="email_input form_row">
+                        <label for="mail"></label>
+                        <input class="contact_area" type="text" id="mail" name="email" placeholder="Your Email" data-required>  
+                        <div id="email_err" class="form-text"></div>
+                    </div>
+                </div>
+                <div class="text_massage form_row">
+                    <label for="message"></label>
+                    <textarea class="contact_area" name="message" id="message" cols="30" rows="10" form="contact_form" placeholder="Your Message" data-required></textarea>
+                    <div id="message_err" class="form-text"></div>
+                </div>
+                <div class="button">
+                  <button type="submit" class="btn form_btn">Send Message</button>
+                </div>
+           </form>
+        </div>
+    </section>
+
+    <footer>
+       <div class="container footer">
+            <div class="all_rights">
+                <span>&#169;2014 tulusdriyo. All Rights Reserved.</span>
+            </div>
+            <ul class="soc_list">
+                <li class="soc_item"><a href="https://www.behance.net/" target="_blank" rel="noopener"><i class="icon-behance"></i></a></li>
+                <li class="soc_item"><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="icon-linkedin"></i></a></li>
+                <li class="soc_item"><a href="https://www.google.com/" target="_blank" rel="noopener"><i class="icon-gplus"></i></a></li>
+                <li class="soc_item"><a href="https://www.facebook.com/" class="facebook" target="_blank" rel="noopener"><i class="icon-facebook"></i></a></li>
+                <li class="soc_item"><a href="https://twitter.com/" class="twitter" target="_blank" rel="noopener"><i class="icon-twitter"></i></a></li>
+            </ul>
+       </div>
+    </footer>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/intersection-observer.js"></script>
+    <script src="assets/js/lazyload.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
