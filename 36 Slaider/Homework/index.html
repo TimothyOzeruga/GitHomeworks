@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/plugins/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+   
+</head>
+
+<body>
+    <div class="container text_padding">
+       <div class="uppper_text"><span>our featured work</span></div>
+       <h1>We create engaging
+        experiences through
+        creativity & craft</h1>
+    </div>
+    <div class="slider_wrap">
+        <div class="slick">
+            <div class="slider_item"><img src="assets/img/layer 6.png" alt="layer 6"></div>
+            <div class="slider_item"><img src="assets/img/lamp.jpg" alt="lamp"></div>
+            <div class="slider_item"><img src="assets/img/bike 8.jpg" alt="bike"></div>
+            <div class="slider_item"><img src="assets/img/lamp.jpg" alt="lamp"></div>
+        </div>
+    </div>
+   
+   
+
+
+
+   
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+  
+    <script type="text/javascript" src="assets/plugins/slick/slick.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(function(){
+            $(".slick").slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                variableWidth: true,
+                responsive: [
+                    {
+                    breakpoint: 1550,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        variableWidth: true,
+                    }
+                    },
+                    {
+                    breakpoint: 1120,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        variableWidth: true,
+                    }
+                    },
+                    {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        variableWidth: true,
+                    }
+                    },
+                ]
+
+            });
+
+        })
+
+        
+
+    </script>
+</body>
+
+</html>

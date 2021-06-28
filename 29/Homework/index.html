@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <style>
+
+        .container{
+            width: 90%;
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .container_margin{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+            margin-top: 20px;
+        }
+        tr, td, th{
+            border: 2px solid #333;
+            padding: 5px;
+        }
+        #text{
+            margin-top: 40px;
+        }
+        #table{
+            margin-top: 40px;
+            /* border-spacing:0; */
+        }
+    </style>
+   
+</head>
+
+<body>
+
+    <div class="container container_margin">
+
+        <div id="radiusInfo"></div>
+        <div id="diametrInfo"></div>
+        <div id="circleArea"></div>
+        <div id="circumference"></div>
+        
+        <div id="text"></div>
+        <div id="text_info"></div>
+
+        <table id="table"></table>
+    </div>
+
+    <script src="assets/js/classes/Circle.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

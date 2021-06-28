@@ -1,0 +1,21 @@
+@import 'reset';
+
+body{
+    background-color: lightblue;
+}
+
+.container {
+    width: 90%;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.slider {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 30px;
+}
