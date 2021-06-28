@@ -100,7 +100,7 @@
 
         /* section home */
         .section_home {
-        background: url(assets/img/bg_first_screen-min.jpg) center center no-repeat;
+        background: center center no-repeat;
         background-size: cover;
         padding: 350px 0 400px;
         text-align: center;
@@ -117,6 +117,46 @@
         margin: 0 auto;
         }
     </style>
+
+<script>
+    $(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop()>100){
+                $(".header").addClass("fixed");
+                $(".logo_img").addClass("small_logo");
+            }else{
+                $(".header").removeClass("fixed");
+                $(".logo_img").removeClass("small_logo");
+            }
+            });
+
+            $(".hamburger, #menu_shadow").click(function(){
+                $('.hamburger').toggleClass("is-active");
+                $("body").toggleClass("open");
+            });
+
+            $(".mobile_menu a").click(function(){
+                $('.hamburger').removeClass("is-active");
+                $("body").removeClass("open");
+            });
+
+            $(".mobile_menu a, .menu_list a").click(function(e){
+                e.preventDefault();
+                let top = $($(this).attr("href")).offset().top;
+                $("html, body").animate({scrollTop:top}, 600);
+            });
+
+            $(".works_slider").slick({
+                arrows: true,
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
 </head>
 
 <body>

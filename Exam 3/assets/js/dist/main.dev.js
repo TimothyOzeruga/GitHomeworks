@@ -212,18 +212,17 @@ $(function () {
         }
       })["catch"](function (err) {});
     }
-  }
+  } // $(function() {
+  //     window.addEventListener("scroll", function(event){
+  //       let top = this.pageYOffset;
+  //       let layers = $(".section_home");
+  //       let speed, yPos;
+  //       layers.each(function() {
+  //         speed = $(this).attr('data-speed');
+  //         yPos = -(top * speed / 100);
+  //         $(this).attr('style','transform: translate3d(0px, ' + yPos + 'px, 0px)');
+  //       });
+  //     });
+  //   });
 
-  $(function () {
-    window.addEventListener("scroll", function (event) {
-      var top = this.pageYOffset;
-      var layers = $(".section_home");
-      var speed, yPos;
-      layers.each(function () {
-        speed = $(this).attr('data-speed');
-        yPos = -(top * speed / 100);
-        $(this).attr('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
-      });
-    });
-  });
 });
