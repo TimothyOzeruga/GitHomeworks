@@ -773,6 +773,19 @@ footer{
 }
 
 
+@media screen and (max-width: 1280px){
+    .works_wrap{
+        .works_slider{
+            .slick-prev{
+                left: -80px;
+            }
+            .slick-next{
+                right: -80px;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 1060px) {
 
@@ -795,10 +808,6 @@ footer{
 
     .works_wrap{
         .works_slider{
-            .slick-arrow{
-                width: 20px;
-                height: 20px;
-            }
             .slick-prev{
                 left: -50px;
             }
