@@ -17,6 +17,22 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="description" content="CreativE DIGITAL Project">
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" /> 
+  
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Beetroot"/>
+    <meta property="og:description" content="CreativE DIGITAL Project"/>
+    <meta property="og:url" content="http://www.Beetroot.com/" />
+    <meta property="og:site_name" content="Beetroot"/>
+    <meta property="og:image" content=""/>
+  
+    <meta name="twitter:title" content="Beetroot"/>
+    <meta name="twitter:description" content="CreativE DIGITAL Project"/>
+    <meta name="twitter:image" content=""/>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/icons.css">
@@ -36,6 +52,93 @@
             width: 90%;
             max-width: 1170px;
             margin: 0 auto;
+        }
+        /* Mobile Menu */
+        .hamburger {
+        display: none;
+        }
+
+        #menu_shadow {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(55, 55, 55, 0.8);
+        display: none;
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+        z-index: 10000;
+        }
+
+        #mobile_menu_block {
+        position: fixed;
+        left: -110%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+        -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        background-color: #fff;
+        z-index: 10001;
+        }
+
+        .open #menu_shadow {
+        display: block;
+        }
+
+        .open #mobile_menu_block {
+        left: 0;
+        }
+
+        .mobile_menu {
+        margin-bottom: 30px;
+        }
+        .mobile_menu li {
+        border-bottom: 1px solid #35008b;
+        }
+        .mobile_menu li a {
+        display: inline-block;
+        padding: 15px;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #232323;
+        width: 100%;
+        }
+        .mobile_menu li a:hover {
+        background-color: #35008b;
+        color: #fff;
+        }
+
+        .mmb_top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #a099bb;
+        }
+
+        .scrollup {
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+        position: fixed;
+        bottom: 50px;
+        right: 60px;
+        display: none;
+        text-indent: -9999px;
+        background: url("../img/icon_top-min.png") center center no-repeat;
+        background-size: cover;
+        z-index: 1001;
         }
         /* Header */
         .header {
@@ -105,13 +208,13 @@
         padding: 350px 0 400px;
         text-align: center;
         }
-        .section_home h1 {
+        .main_title {
         font-family: "Proxima Nova Bold";
         font-size: 72px;
         margin-bottom: 20px;
         text-transform: uppercase;
         }
-        .section_home .sub_title {
+        .sub_title {
         font-size: 30px;
         font-weight: 300;
         margin: 0 auto;
@@ -209,7 +312,7 @@
 
     <section id="Home" class="section_home lazy-bg" data-src="assets/img/bg_first_screen-min.jpg" data-speed="15">
         <div class="container">
-            <h1>CreativE DIGITAL Project</h1>
+            <h1 class="main_title">CreativE DIGITAL Project</h1>
             <div class="sub_title">
                 Duis mollis, est non commodo luctus, <br>
                 nisi erat porttitor ligula, eget lacinia odio sem nec elit.
