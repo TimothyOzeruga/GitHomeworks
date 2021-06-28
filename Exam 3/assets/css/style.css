@@ -739,8 +739,7 @@ footer .footer {
   .header_container .soc_list {
     display: none;
   }
-
-  .hamburger {
+  .header_container .hamburger {
     display: block;
   }
 
