@@ -379,12 +379,12 @@ body {
     }
 
     .works_slider{
-        width: 730px * 100% / 1170px;
+        width: 730px;
         margin: auto;
         margin-bottom: 120px;
 
         .work_slide{
-            
+            height: 550px;
             img{
                 width: 100%;
             }
@@ -884,6 +884,16 @@ footer{
         }
     }
 
+    .works_wrap{
+        .works_slider{
+            width: 500px;
+    
+            .work_slide{
+                height: 380px;
+            }
+        }
+    }
+
     .team_wrap{
 
         h3{
@@ -960,6 +970,25 @@ footer{
             }
         }
     }
+    .works_wrap{
+        .works_slider{
+            width: 350px;
+    
+            .work_slide{
+                height: 270px;
+            }
+            .slick-arrow{
+                width: 20px;
+                height: 20px;
+            }
+            .slick-prev{
+                left: -30px;
+            }
+            .slick-next{
+                right: -30px;
+            }
+        }
+    }
 
     .contact_wrap{
         h3{
@@ -1000,3 +1029,15 @@ footer{
     }
 }
 
+@media screen and (max-width: 430px){
+    .works_wrap{
+        .works_slider{
+            width: 240px;
+    
+            .work_slide{
+                height: 200px;
+            }
+        }
+    }
+
+}
