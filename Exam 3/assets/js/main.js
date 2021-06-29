@@ -119,8 +119,8 @@ $(function(){
                 resp.data.forEach(i => {
                     li += `<li class="person_info">`;
                     li += `<div class="upper_div"></div>`
-                    li += `<img src="${i.photo}" alt="photo">`;
-                    // li += `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="photo" class="lazy" data-src="${i.photo}">`;
+                    // li += `<img src="${i.photo}" alt="photo">`;
+                    li += `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="photo" class="lazy" data-lazy="${i.photo}">`;
                     li += `<div class="person_name">${i.person_name}</div>`;
                     li += `<div class="person_position">${i.position}</div>`
                     li += '<ul class="soc_list">';

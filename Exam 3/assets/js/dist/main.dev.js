@@ -108,9 +108,9 @@ $(function () {
       var li = '';
       resp.data.forEach(function (i) {
         li += "<li class=\"person_info\">";
-        li += "<div class=\"upper_div\"></div>";
-        li += "<img src=\"".concat(i.photo, "\" alt=\"photo\">"); // li += `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="photo" class="lazy" data-src="${i.photo}">`;
+        li += "<div class=\"upper_div\"></div>"; // li += `<img src="${i.photo}" alt="photo">`;
 
+        li += "<img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==\" alt=\"photo\" class=\"lazy\" data-lazy=\"".concat(i.photo, "\">");
         li += "<div class=\"person_name\">".concat(i.person_name, "</div>");
         li += "<div class=\"person_position\">".concat(i.position, "</div>");
         li += '<ul class="soc_list">';
