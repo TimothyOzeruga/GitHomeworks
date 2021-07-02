@@ -1,1 +1,1 @@
-GitHomeworks
+Тимофей Озеруга - Front-end Developer.
